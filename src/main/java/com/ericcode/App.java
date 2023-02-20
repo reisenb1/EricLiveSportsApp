@@ -12,6 +12,18 @@ public class App {
 
     private void run() {
         consoleService.printGreeting();
+
+        int menuSelection = -1;
+
+        while (menuSelection != 0) {
+            consoleService.printMainMenu();
+            menuSelection = consoleService.promptForMenuSelection();
+            if (menuSelection == 1) {
+
+            }
+        }
+
+
     }
 
 }

@@ -11,4 +11,24 @@ public class ConsoleService {
         System.out.println("* Welcome to Eric's Live Sports Score App! *");
         System.out.println("********************************************");
     }
+
+
+    public void printMainMenu() {
+        System.out.println();
+        System.out.println("----Live Scores Main Menu----");
+        System.out.println("1: List Current Live Games");
+        System.out.println();
+    }
+
+    public int promptForMenuSelection() {
+        int menuSelection;
+        System.out.println("Please choose an option: ");
+        try {
+            menuSelection = Integer.parseInt(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            menuSelection = -1;
+        }
+        return menuSelection;
+    }
+
 }
