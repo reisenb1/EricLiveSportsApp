@@ -7,6 +7,8 @@
     <list default="true" id="31f64eff-88fe-4229-a0ac-e33702710238" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericcode/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericcode/services/ConsoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/services/ConsoleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ericcode/services/ScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/services/ScoreService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
