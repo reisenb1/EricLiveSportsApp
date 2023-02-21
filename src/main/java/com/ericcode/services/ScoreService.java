@@ -20,6 +20,6 @@ public class ScoreService {
 
         HttpEntity request = new HttpEntity(headers);
 
-        return restTemplate.exchange(API_BASE_URL + "games?date=2022-02-13", HttpMethod.GET, request, String.class);
+        return restTemplate.exchange(API_BASE_URL + "games?date=2022-02-12", HttpMethod.GET, request, String.class);
     }
 }
