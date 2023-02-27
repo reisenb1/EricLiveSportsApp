@@ -12,7 +12,7 @@ public class ScoreService {
     private final String keyType = "X-RapidAPI-Key";
     private final String key = "d82ab036b8msh3bbcf24edf8f75fp184f1fjsn21704227f7ec";
 
-    public ResponseEntity getPastScores() {
+    public ResponseEntity getPastScores(String date) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
@@ -20,6 +20,6 @@ public class ScoreService {
 
         HttpEntity request = new HttpEntity(headers);
 
-        return restTemplate.exchange(API_BASE_URL + "games?date=2022-02-12", HttpMethod.GET, request, String.class);
+        return restTemplate.exchange(API_BASE_URL + "games?date=" + date, HttpMethod.GET, request, String.class);
     }
 }

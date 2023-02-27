@@ -29,6 +29,14 @@ public class ConsoleService {
         System.out.println();
     }
 
+    public void printPastScoresMenu() {
+        System.out.println();
+        System.out.println("----Past Scores Menu----");
+        System.out.println();
+        System.out.println("Type date of desired past scores in format YYYY-MM-DD or 0 to exit to previous menu.");
+        System.out.println();
+    }
+
     public void printNBAGames (ResponseEntity response) {
         System.out.println(response.getBody());
     }
@@ -42,6 +50,13 @@ public class ConsoleService {
             menuSelection = -1;
         }
         return menuSelection;
+    }
+
+    public String promptForDate() {
+        String date;
+        System.out.println("Please enter the desired date:");
+        date = scanner.nextLine();
+        return date;
     }
 
 }

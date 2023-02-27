@@ -28,8 +28,13 @@ public class App {
                     consoleService.printNBAMenu();
                     nbaMenuSelection = consoleService.promptForMenuSelection();
                     if (nbaMenuSelection == 1) {
-                        ResponseEntity response = scoreService.getPastScores();
-                        consoleService.printNBAGames(response);
+                        consoleService.printPastScoresMenu();
+                        String pastDate = consoleService.promptForDate();
+                        if (pastDate.equals("0")) {
+                        } else {
+                            ResponseEntity response = scoreService.getPastScores(pastDate);
+                            consoleService.printNBAGames(response);
+                        }
                     }
                 }
 
