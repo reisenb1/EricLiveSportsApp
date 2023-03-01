@@ -32,7 +32,7 @@ public class App {
                         String pastDate = consoleService.promptForDate();
                         if (pastDate.equals("0")) {
                         } else {
-                            ResponseEntity response = scoreService.getPastScores(pastDate);
+                            ResponseEntity response = scoreService.getNBAGames(pastDate);
                             consoleService.printNBAGames(response);
                         }
                     }
