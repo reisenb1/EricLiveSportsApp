@@ -1,8 +1,10 @@
 package com.ericcode;
 
+import com.ericcode.model.Game;
 import com.ericcode.services.ConsoleService;
 import com.ericcode.services.ScoreService;
-import org.springframework.http.ResponseEntity;
+
+import java.util.List;
 
 public class App {
     private final ConsoleService consoleService = new ConsoleService();
@@ -32,8 +34,11 @@ public class App {
                         String pastDate = consoleService.promptForDate();
                         if (pastDate.equals("0")) {
                         } else {
-                            ResponseEntity response = scoreService.getNBAGames(pastDate);
-                            consoleService.printNBAGames(response);
+//                            System.out.println(scoreService.getNBAGames(pastDate).getBody());
+                            List<Game> games = scoreService.listNBAGames(pastDate);
+//                            for (Game game : games) {
+//                                System.out.println(game.getSummary());
+//                            }
                         }
                     }
                 }

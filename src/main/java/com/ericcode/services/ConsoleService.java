@@ -1,7 +1,9 @@
 package com.ericcode.services;
 
+import com.ericcode.model.Game;
 import org.springframework.http.ResponseEntity;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class ConsoleService {
@@ -37,8 +39,8 @@ public class ConsoleService {
         System.out.println();
     }
 
-    public void printNBAGames (ResponseEntity response) {
-        System.out.println(response.getBody());
+    public void printGames(List<Game> games) {
+
     }
 
     public int promptForMenuSelection() {

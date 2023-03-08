@@ -1,8 +1,12 @@
 package com.ericcode.services;
 
 
+import com.ericcode.model.Body;
+import com.ericcode.model.Game;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
 
 public class ScoreService {
 
@@ -21,5 +25,17 @@ public class ScoreService {
         HttpEntity request = new HttpEntity(headers);
 
         return restTemplate.exchange(API_BASE_URL + "games?league=NBA&date=" + date, HttpMethod.GET, request, String.class);
+    }
+
+    public List<Game> listNBAGames(String date) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+
+        headers.set(keyType, key);
+
+        HttpEntity request = new HttpEntity(headers);
+        Body responseBody = restTemplate.exchange(API_BASE_URL + "games?league=NBA&date=" + date, HttpMethod.GET, request, Body.class).getBody();
+
+        return responseBody.getGames();
     }
 }
