@@ -36,9 +36,9 @@ public class App {
                         } else {
 //                            System.out.println(scoreService.getNBAGames(pastDate).getBody());
                             List<Game> games = scoreService.listNBAGames(pastDate);
-//                            for (Game game : games) {
-//                                System.out.println(game.getSummary());
-//                            }
+                            for (Game game : games) {
+                                System.out.println(game.getSummary());
+                            }
                         }
                     }
                 }

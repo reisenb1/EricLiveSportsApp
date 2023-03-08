@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Body {
     private String status;
-    private List<Game> games;
+    private List<Game> results;
 
     public String getStatus() {
         return status;
@@ -14,11 +14,11 @@ public class Body {
         this.status = status;
     }
 
-    public List<Game> getGames() {
-        return games;
+    public List<Game> getResults() {
+        return results;
     }
 
-    public void setGames(List<Game> games) {
-        this.games = games;
+    public void setResults(List<Game> results) {
+        this.results = results;
     }
 }

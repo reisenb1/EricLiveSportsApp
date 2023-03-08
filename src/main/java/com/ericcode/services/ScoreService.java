@@ -36,6 +36,6 @@ public class ScoreService {
         HttpEntity request = new HttpEntity(headers);
         Body responseBody = restTemplate.exchange(API_BASE_URL + "games?league=NBA&date=" + date, HttpMethod.GET, request, Body.class).getBody();
 
-        return responseBody.getGames();
+        return responseBody.getResults();
     }
 }
