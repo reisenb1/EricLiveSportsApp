@@ -39,8 +39,20 @@ public class ConsoleService {
         System.out.println();
     }
 
-    public void printGames(List<Game> games) {
-
+    public void printScores(List<Game> games) {
+        for (Game game : games) {
+            String awayTeamName = game.getTeams().getAway().getTeam();
+            String awayTeamAbbreviation = game.getTeams().getAway().getAbbreviation();
+            String homeTeamName = game.getTeams().getHome().getTeam();
+            String homeTeamAbbreviation = game.getTeams().getHome().getAbbreviation();
+            String venue = game.getVenue().getName() + "  (" + game.getVenue().getCity() + ", " + game.getVenue().getState() + ")";
+            String homePoints = game.getScoreboard().getScore().getHomeScore();
+            String awayPoints = game.getScoreboard().getScore().getAwayScore();
+            System.out.println("");
+            System.out.printf("%-23s (%s) %4s%n", homeTeamName, homeTeamAbbreviation, homePoints);
+            System.out.printf("%-23s (%s) %4s%n", awayTeamName, awayTeamAbbreviation, awayPoints);
+            System.out.printf("      %s%n", venue);
+        }
     }
 
     public int promptForMenuSelection() {

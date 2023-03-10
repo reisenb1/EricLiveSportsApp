@@ -35,10 +35,8 @@ public class App {
                         if (pastDate.equals("0")) {
                         } else {
 //                            System.out.println(scoreService.getNBAGames(pastDate).getBody());
-                            List<Game> games = scoreService.listNBAGames(pastDate);
-                            for (Game game : games) {
-                                System.out.println(game.getSummary());
-                            }
+                            List<Game> games = scoreService.listGamesByDate("NBA", pastDate);
+                            consoleService.printScores(games);
                         }
                     }
                 }

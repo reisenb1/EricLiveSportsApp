@@ -1,10 +1,13 @@
 package com.ericcode.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class Body {
     private String status;
-    private List<Game> results;
+    @JsonProperty("results")
+    private List<Game> games;
 
     public String getStatus() {
         return status;
@@ -14,11 +17,11 @@ public class Body {
         this.status = status;
     }
 
-    public List<Game> getResults() {
-        return results;
+    public List<Game> getGames() {
+        return games;
     }
 
-    public void setResults(List<Game> results) {
-        this.results = results;
+    public void setResults(List<Game> games) {
+        this.games = games;
     }
 }

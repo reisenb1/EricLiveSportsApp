@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31f64eff-88fe-4229-a0ac-e33702710238" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/model/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/model/Scoreboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/model/Venue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ericcode/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericcode/model/Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/model/Body.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericcode/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericcode/services/ConsoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/services/ConsoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericcode/services/ScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericcode/services/ScoreService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
