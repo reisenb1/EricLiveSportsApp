@@ -34,14 +34,52 @@ public class App {
                         String pastDate = consoleService.promptForDate();
                         if (pastDate.equals("0")) {
                         } else {
-//                            System.out.println(scoreService.getNBAGames(pastDate).getBody());
                             List<Game> games = scoreService.listGamesByDate("NBA", pastDate);
                             consoleService.printScores(games);
                         }
+                    } else if (nbaMenuSelection == 2) {
+                        List<Game> games = scoreService.listLiveGames("NBA");
+                        consoleService.printScores(games);
                     }
                 }
-
+            } else if (menuSelection == 2) {
+                int nflMenuSelection = -1;
+                while (nflMenuSelection != 0) {
+                    consoleService.printNFLMenu();
+                    nflMenuSelection = consoleService.promptForMenuSelection();
+                    if (nflMenuSelection == 1) {
+                        consoleService.printPastScoresMenu();
+                        String pastDate = consoleService.promptForDate();
+                        if (pastDate.equals("0")) {
+                        } else {
+                            List<Game> games = scoreService.listGamesByDate("NFL", pastDate);
+                            consoleService.printScores(games);
+                        }
+                    } else if (nflMenuSelection == 2) {
+                        List<Game> games = scoreService.listLiveGames("NFL");
+                        consoleService.printScores(games);
+                    }
+                }
+            } else if (menuSelection == 3) {
+                int mlbMenuSelection = -1;
+                while (mlbMenuSelection != 0) {
+                    consoleService.printMLBMenu();
+                    mlbMenuSelection = consoleService.promptForMenuSelection();
+                    if (mlbMenuSelection == 1) {
+                        consoleService.printPastScoresMenu();
+                        String pastDate = consoleService.promptForDate();
+                        if (pastDate.equals("0")) {
+                        } else {
+                            List<Game> games = scoreService.listGamesByDate("MLB", pastDate);
+                            consoleService.printScores(games);
+                        }
+                    } else if (mlbMenuSelection == 2) {
+                        List<Game> games = scoreService.listLiveGames("MLB");
+                        consoleService.printScores(games);
+                    }
+                }
             }
+
         }
 
 

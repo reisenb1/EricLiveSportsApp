@@ -21,12 +21,33 @@ public class ConsoleService {
         System.out.println();
         System.out.println("----Main Menu----");
         System.out.println("1: NBA");
+        System.out.println("2: NFL");
+        System.out.println("3: MLB");
         System.out.println();
     }
     public void printNBAMenu() {
         System.out.println();
         System.out.println("----NBA Menu----");
         System.out.println("1: Past Scores");
+        System.out.println("2: Live Scores");
+        System.out.println("0: Exit to Main Menu");
+        System.out.println();
+    }
+
+    public void printNFLMenu() {
+        System.out.println();
+        System.out.println("----NFL Menu----");
+        System.out.println("1: Past Scores");
+        System.out.println("2: Live Scores");
+        System.out.println("0: Exit to Main Menu");
+        System.out.println();
+    }
+
+    public void printMLBMenu() {
+        System.out.println();
+        System.out.println("----MLB Menu----");
+        System.out.println("1: Past Scores");
+        System.out.println("2: Live Scores");
         System.out.println("0: Exit to Main Menu");
         System.out.println();
     }
